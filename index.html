@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SC Ebikama - A community-driven sports club competing with passion and standing united on and off the pitch.">
+    <title>SC Ebikama | Strength. Unity. Community.</title>
+    
+    <link rel="icon" type="image/jpeg" href="./Images/LOGO.jpeg">
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo" aria-label="SC Ebikama Home">
+                <span class="logo-icon">SC</span>
+                <span class="logo-text">EBIKAMA</span>
+            </a>
+            
+            <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#fixtures" class="nav-link">Fixtures</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#committee" class="nav-link">Committee</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <a href="#donate" class="btn btn-primary nav-btn">Donate</a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <p class="hero-subtitle">WELCOME TO SC EBIKAMA</p>
+                <h1 class="hero-title">
+                    Strength. Unity.<br>
+                    <span class="highlight">Community.</span>
+                </h1>
+                <p class="hero-description">
+                    A community-driven sports club competing with passion and standing united on and off the pitch.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-outline">Learn More</a>
+                    <a href="#donate" class="btn btn-primary">Donate Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding">
+            <div class="container about-grid">
+                <div class="about-text">
+                    <p class="section-subtitle">ABOUT US</p>
+                    <h2 class="section-title">More Than a Club.<br>A Family.</h2>
+                    <p class="section-desc">
+                        SC Ebikama is an Old Students of 2024 and 2022 sports club  bringing together players, supporters, and friends. We compete with passion and stand united on and off the pitch.
+                    </p>
+                    
+                    <div class="values-list">
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div>
+                                <h4>Integrity</h4>
+                                <p>We play fair, respect our opponents, and uphold the spirit of the game.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fas fa-users"></i></div>
+                            <div>
+                                <h4>Unity</h4>
+                                <p>Together we are stronger. Every player, every supporter, every member matters.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <h4>Excellence</h4>
+                                <p>We strive for greatness in every match, every training session, every day.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <div>
+                        <img src="./Images/support2.jpeg" alt="Team Huddle" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span>Team Huddle</span>
+                        </div>
+                    </div>
+                        <div class="est-badge">
+                            <span>EST. 2025</span>
+                            <p>ASSIOSA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fixtures Section (Real Rolling Ball) -->
+        <section id="fixtures" class="fixtures section-padding bg-light">
+            <div class="container text-center">
+                <p class="section-subtitle">MATCH SCHEDULE</p>
+                <h2 class="section-title">Fixtures & Results</h2>
+                
+                <div class="coming-soon-container">
+                    <div class="pitch-animation">
+                        <!-- The shadow under the ball -->
+                        <div class="ball-shadow"></div>
+                        
+                        <!-- The real soccer ball using SVG -->
+                        <div class="soccer-ball">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <!-- White base -->
+                                <circle cx="50" cy="50" r="48" fill="#ffffff" stroke="#333" stroke-width="2"/>
+                                <!-- Black pentagons -->
+                                <polygon points="50,25 62,35 58,50 42,50 38,35" fill="#1a1a1a"/>
+                                <polygon points="20,40 32,30 38,42 30,55 18,52" fill="#1a1a1a"/>
+                                <polygon points="80,40 68,30 62,42 70,55 82,52" fill="#1a1a1a"/>
+                                <polygon points="35,75 25,65 30,52 42,52 45,65" fill="#1a1a1a"/>
+                                <polygon points="65,75 75,65 70,52 58,52 55,65" fill="#1a1a1a"/>
+                                <polygon points="50,85 40,75 45,65 55,65 60,75" fill="#1a1a1a"/>
+                                <!-- Connecting lines to make it look like a real ball -->
+                                <line x1="50" y1="25" x2="50" y2="10" stroke="#333" stroke-width="2"/>
+                                <line x1="62" y1="35" x2="75" y2="25" stroke="#333" stroke-width="2"/>
+                                <line x1="38" y1="35" x2="25" y2="25" stroke="#333" stroke-width="2"/>
+                                <line x1="58" y1="50" x2="70" y2="52" stroke="#333" stroke-width="2"/>
+                                <line x1="42" y1="50" x2="30" y2="52" stroke="#333" stroke-width="2"/>
+                                <line x1="30" y1="55" x2="25" y2="65" stroke="#333" stroke-width="2"/>
+                                <line x1="70" y1="55" x2="75" y2="65" stroke="#333" stroke-width="2"/>
+                                <line x1="42" y1="52" x2="45" y2="65" stroke="#333" stroke-width="2"/>
+                                <line x1="58" y1="52" x2="55" y2="65" stroke="#333" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Fixtures coming soon</h3>
+                    <p>Stay tuned for our upcoming match schedule and results.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery section-padding">
+            <div class="container">
+                <div class="text-center">
+                    <p class="section-subtitle">MOMENTS</p>
+                    <h2 class="section-title">Gallery</h2>
+                </div>
+                
+                <div class="gallery-grid">
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item">
+                        <img src="./Images/team.jpeg" alt="Team Members" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span>Club Members</span>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item">
+                        <img src="./Images/happy.jpeg" alt="Match Day" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span>Match Day</span>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-item">
+                        <img src="./Images/support2.jpeg" alt="Team Huddle" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span>Team Huddle</span>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 4 -->
+                    <div class="gallery-item">
+                        <img src="./Images/support1.jpeg" alt="Featured Players" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span>Featured players</span>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 5 -->
+                    <div class="gallery-item">
+                        <img src="./Images/club1.jpeg" alt="Team and Supporters" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span>Team and Supporters</span>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 6 -->
+                    <div class="gallery-item">
+                        <img src="./Images/JOy.jpeg" alt="Youth" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span>Team Cheerers</span>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 7 -->
+                    <div class="gallery-item">
+                        <img src="./Images/Capt.jpeg" alt="Captains" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span>Team Capt</span>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 8 -->
+                    <div class="gallery-item">
+                        <img src="./Images/team2.jpeg" alt="Fans" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span>Special Fans</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Committee Section -->
+        <section id="committee" class="committee section-padding bg-light">
+            <div class="container">
+                <div class="text-center">
+                    <p class="section-subtitle">LEADERSHIP</p>
+                    <h2 class="section-title">Committee</h2>
+                    <p class="section-desc">The dedicated team that keeps SC Ebikama running.</p>
+                </div>
+                
+                <div class="table-responsive">
+                    <table class="committee-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">ROLE</th>
+                                <th scope="col">NAME</th>
+                                <th scope="col">CONTACT</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Chairman</td>
+                                <td></td>
+                                <td>+256 </td>
+                            </tr>
+                            <tr>
+                                <td>Vice Chairman</td>
+                                <td> </td>
+                                <td>+256 </td>
+                            </tr>
+                            <tr>
+                                <td>Secretary</td>
+                                <td></td>
+                                <td>+256</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <div class="text-center">
+                    <p class="section-subtitle">GET IN TOUCH</p>
+                    <h2 class="section-title">Contact Us</h2>
+                </div>
+                
+                <div class="contact-grid">
+                  
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>EMAIL</h4>
+                                <p>E-mails coming soon</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <h4>PHONE</h4>
+                                <p>+256 795141620</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>LOCATION</h4>
+                                <p>Ibanda, Western Uganda</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                                            
+                        <form id="contactForm" class="contact-form" action="https://formspree.io/f/xgvkjpgy" method="POST">
+                            
+                            <input type="hidden" name="_subject" value="New message from SC Ebikama website">
+
+                            <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name" autocomplete="name">
+                            <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email" autocomplete="email">
+                            <textarea name="message" rows="5" placeholder="Your Message" required aria-label="Your Message"></textarea>
+                            
+                            <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+                        </form>
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <span class="logo-icon">SC</span>
+                    <span class="logo-text">EBIKAMA</span>
+                </a>
+                <p class="footer-tagline">Strength. Unity. Community.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#fixtures">Fixtures</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#committee">Committee</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-donate">
+                <h4>SUPPORT THE CLUB</h4>
+                <p>Your donation helps us fund equipment, travel, and community programs.</p>
+                <a href="#donate" class="btn btn-primary">Donate Now</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 SC Ebikama. All Rights Reserved.</p>
+                <p>Designed by 
+                  <a href="https://peterkweyamba.netlify.app/"><strong>KWEYAMBA PETER</strong> </a>
+                  </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="ebikama.js"></script>
+</body>
+</html>
